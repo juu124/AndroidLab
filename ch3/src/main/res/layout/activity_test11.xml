@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test1_1Activity">
+
+    <!--    사이즈 테스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button2" />
+
+    </LinearLayout>
+
+    <!--  gravity / layout_gravity 테스트 -->
+    <!--   layout_gravity : 부모의 주축(main axis)의 정렬은 안된다
+    반대축(cross axis) 만 정렬이 가능하다.
+    Linear가 기본. 방향을 설정하고, 방향대로 뷰를 나열하는 레이아웃.
+    기본 방향으로는 정렬안된다.-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:gravity="center">-->
+
+    <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_width="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_height="150dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:layout_gravity="center_vertical|center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:background="#ff0000"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:gravity="right|bottom"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:text="Hello World"&ndash;&gt;-->
+    <!--&lt;!&ndash;            android:textColor="@color/white" />&ndash;&gt;-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="150dp"-->
+    <!--            android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--            android:background="#ff0000"-->
+    <!--            android:gravity="right|bottom"-->
+    <!--            android:text="Hello World"-->
+    <!--            android:textColor="@color/white" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    weight 테스트-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="button 1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="button 2" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="button 3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="button 4" />
+    </LinearLayout>
+
+</LinearLayout>
