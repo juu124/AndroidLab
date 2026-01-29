@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    tools:context=".Test5Activity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_rowSpan="2"
+        android:src="@drawable/ico_notification_yellow" />
+
+    <!--    GridView 하위에 추가되는 뷰의 width, height 값이 기본 wrap_content 지정
+    생략 가능하다..
+    만약 직접 선언해서 사이즈를 준다면.. match_parent 는 적용되지 않는다.
+    직접 숫자로 사이즈를 지정하는 것은 적용된다..
+    사이즈를 0으로 지정하고 weight 로 사이즈 지정..
+    -->
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="16dp"
+        android:text="홍길동"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginRight="16dp"
+        android:text="1월 1일" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="16dp"
+        android:text="안녕하세요." />
+
+
+</GridLayout>

@@ -9,6 +9,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab2">
         <activity
+            android:name=".ch3.Quiz2MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ch3.Quiz1MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ch2.QuizActivity2"
             android:exported="true">
             <intent-filter>
