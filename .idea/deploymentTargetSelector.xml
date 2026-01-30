@@ -11,9 +11,6 @@
       <SelectionState runConfigName="ch3">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="Test3Activity">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="Test0Activity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
@@ -32,6 +29,12 @@
         <DialogSelection />
       </SelectionState>
       <SelectionState runConfigName="Quiz1MainActivity (1)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Quiz2MainActivity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ch4">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
