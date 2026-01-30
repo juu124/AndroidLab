@@ -58,14 +58,11 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginTop="16dp"
         android:gravity="top"
         android:hint="의견을 입력하세요"
-        android:lines="8"
-        android:inputType=""
-        android:maxLines="8"
-        android:minLines="8" />
+        android:lines="8" />
 
     <CheckBox
         android:layout_width="wrap_content"
