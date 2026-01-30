@@ -3,16 +3,13 @@ package com.example.quiz
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
-import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quiz.databinding.ActivityQuiz21Binding
-import java.util.regex.Pattern
 
-//typealias patterns = java.util.Patterns
 class Quiz2_1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -101,7 +98,6 @@ class Quiz2_1Activity : AppCompatActivity() {
         val result = "이름 : $name, 이메일 : $email, 성별 : $gender"
         Log.d("Quiz2_1Activity", result)
     }
-
 
 
     // hof도 사용했는데 효과적이지 않아서 주석처리
