@@ -55,7 +55,8 @@ class Test1Activity : AppCompatActivity(), CompoundButton.OnCheckedChangeListene
              showToast("button2 clicked")
          }
 
-
+        // 상단 class Test1Activity : AppCompatActivity(), CompoundButton.OnCheckedChangeListener { 과
+        // override된 onCheckedChanged 함수 형식으로 이벤트 준비할때 아래 형식으로 this로 넘기면 이벤트 리스너 가능하다
         binding.check1.setOnCheckedChangeListener(this)
 
         // 이벤트 핸들러가 준비되어야한다.
