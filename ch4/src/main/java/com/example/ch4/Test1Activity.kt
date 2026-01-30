@@ -30,7 +30,7 @@ class Test1Activity : AppCompatActivity(), CompoundButton.OnCheckedChangeListene
     inner class EventHandler : View.OnClickListener {
         // 매개변수(v: View?)는 현재 이벤트가 발생한 객체이다.
         override fun onClick(v: View?) {
-            when(v) {
+            when (v) {
                 binding.button1 -> showToast("button1 clicked")
                 binding.button2 -> showToast("button2 clicked")
             }
@@ -50,17 +50,34 @@ class Test1Activity : AppCompatActivity(), CompoundButton.OnCheckedChangeListene
             insets
         }
         binding.button1.setOnClickListener(EventHandler())
-        binding.button2.setOnClickListener(EventHandler())
+//        binding.button2.setOnClickListener(EventHandler())
+         binding.button2.setOnClickListener {
+             showToast("button2 clicked")
+         }
+
 
         binding.check1.setOnCheckedChangeListener(this)
 
         // 이벤트 핸들러가 준비되어야한다.
         // 이 이벤트에서만 사용하는 핸들러라면? => 익명 클래스를 사용한다. (activity에 하거나, inner클래스처럼 사용하는 방법도 있지만..)
         // 매개변수에 들어가는 인터페이스를 구현해야한다. 인터페이스는 타입으로 사용할 수 있기에 아래처럼 사용가능하다
-        binding.check2.setOnCheckedChangeListener(object: CompoundButton.OnCheckedChangeListener {
-            override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
-                Log.d("lee", "check2 is $isChecked")
-            }
-        })
+//        binding.check2.setOnCheckedChangeListener(object: CompoundButton.OnCheckedChangeListener {
+//            override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
+//                Log.d("lee", "check2 is $isChecked")
+//            }
+//        })
+
+        // 인터페이스를 구현한 익명 클래스를 만든다면, 위처럼 object: Interface { 추상 함수 } 형태가 기본이지만,
+        // 줄여서 추상함수 안쪽 내용만 { } 로 작성이 가능하다.
+        // Single Abstract Method 기법이라고 부른다. 줄여서 SAM 기법
+        // 추상함수 하나만 가지는 인터페이스만 가능하다
+//        binding.check2.setOnCheckedChangeListener({buttonView, isChecked ->
+//            Log.d("lee", "check2 is $isChecked")
+//        })
+
+        // 고차함수(hof) 마지막 매개변수가 람다함수라면 () 밖에 사용이 가능하다.
+        binding.check2.setOnCheckedChangeListener { buttonView, isChecked ->
+            Log.d("lee", "check2 is $isChecked")
+        }
     }
 }
