@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F0F0F0"
     android:fitsSystemWindows="true"
-    tools:context=".ch3.Quiz2MainActivity">
+    tools:context=".Quiz3_2Activity">
 
     <LinearLayout
         android:id="@+id/layout_user_profile"

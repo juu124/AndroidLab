@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ch3.Quiz1MainActivity">
+    tools:context=".Quiz3_1Activity">
 
     <LinearLayout
         android:id="@+id/add_phone_num"

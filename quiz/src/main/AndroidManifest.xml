@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab2">
         <activity
-            android:name=".ch3.Quiz2MainActivity"
+            android:name=".Quiz5Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ch3.Quiz1MainActivity"
+            android:name=".Quiz4_1Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ch2.QuizActivity2"
+            android:name=".Quiz3_2Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ch2.QuizActivity1"
+            android:name=".Quiz3_1Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,7 +45,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Quiz2_2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Quiz2_1Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

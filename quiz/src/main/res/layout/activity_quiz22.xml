@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="10dp"
     android:orientation="vertical"
-    tools:context=".ch2.QuizActivity2">
+    tools:context=".Quiz2_2Activity">
 
     <TextView
         android:layout_width="match_parent"

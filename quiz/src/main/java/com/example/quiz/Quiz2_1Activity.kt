@@ -1,4 +1,4 @@
-package com.example.quiz.ch2
+package com.example.quiz
 
 import android.os.Bundle
 import android.view.View
@@ -7,15 +7,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.quiz.R
-import com.example.quiz.databinding.ActivityQuiz1Binding
+import com.example.quiz.databinding.ActivityQuiz21Binding
 
-class QuizActivity1 : AppCompatActivity() {
+class Quiz2_1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        val binding = ActivityQuiz1Binding.inflate(layoutInflater)
+        val binding = ActivityQuiz21Binding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
