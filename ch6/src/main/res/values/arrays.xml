@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    문자열 리소스 : <string>
+문자열 리소스 여러개를 등록하고자 한다. 그 여러개를 코드에서 한꺼번에 사용한다면 문자열 리소스는 불편하다.
+==> 문자열 여러개를 배열 리소스로 등록해서 코드에서 한번에 문자열 배열로
+-->
+    <string-array name="spinner_array">
+        <item>한국어</item>
+        <item>영어</item>
+        <item>독일어</item>
+        <item>중국어</item>
+    </string-array>
+
+    <string-array name="auto_array">
+        <item>류현진</item>
+        <item>류현구</item>
+        <item>홍길동</item>
+        <item>김길동</item>
+        <item>홀길진</item>
+    </string-array>
+</resources>

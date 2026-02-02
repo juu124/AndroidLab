@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>WebView Test</title>
+</head>
+<body>
+<h2>WebView Test</h2>
+<div id="displayTxt">여기에 네이티브 데이터 찍힌다.</div>
+<br/>
+<button onclick="sendToAndroid()">javascript button</button>
+
+<script>
+    // native 에서 호출할 함수
+    function updateText(text) {
+        document.getElementById('displayTxt').innerHTML = text;
+    }
+    // 자바 스크립그 onclick 이벤트 콜백
+    function sendToAndroid() {
+        // navtive function 호출
+        Android.updateTestView('javascript data')
+    }
+    // 브라우저에서 html 로딩이 완료되는 순간의 이벤트
+    window.onload = function() {
+        alert('load...');
+    }
+</script>
+</body>
+</html>

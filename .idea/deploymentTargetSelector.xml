@@ -20,7 +20,13 @@
       <SelectionState runConfigName="quiz">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ch6">
+      <SelectionState runConfigName="Test2Activity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Test2Activity (1)">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="Test3Activity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
