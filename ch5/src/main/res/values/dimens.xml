@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xml 이니까 논리적인 단위를 줄 수 있다.-->
+<resources>
+    <dimen name="test_size">15dp</dimen>
+</resources>
