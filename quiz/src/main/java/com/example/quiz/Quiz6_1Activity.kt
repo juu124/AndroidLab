@@ -60,17 +60,8 @@ data class ChatInfo(val name: String, val message: String, val day: String)
 class ChatViewHolder(val binding: ItemKakaoChatBinding) : RecyclerView.ViewHolder(binding.root)
 
 class ChatAdapter(val dataList: MutableList<ChatInfo>) : RecyclerView.Adapter<ChatViewHolder>() {
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ChatViewHolder {
-        return ChatViewHolder(
-            ItemKakaoChatBinding.inflate(
-                LayoutInflater.from(parent.context),
-                parent,
-                false
-            )
-        )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
+        return ChatViewHolder(ItemKakaoChatBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: ChatViewHolder, position: Int) {

@@ -25,6 +25,14 @@ class Quiz6_2Activity : AppCompatActivity() {
                 result += i
             }
             Log.d("Quiz6_2Activity", "plusNum() result $result")
+            // 모든 화면 반영과 관련된 코드는 main(ui) thread에 의해 처리되어야 하는 규칙이 있다.
+            // runOnUiThread를 사용하거나 post를 사용한다.
+            // TextView - 문자열 교체
+            // WebView - loadUrl()
+            // runOnUiThread() : activity 함수 { } 부분을 ui thread 에서 실행시켜 준다.
+
+            // 어제 Text는 왜 컴파일 에러가 나지 않았을까?
+            // ==> TextView 내부에서 text 교체업무를 스레드를 체크해서 ui Thread가 아니면 ui thread로 처리해주는 부분이 준비되어 있기 때문에 문제가 되지 않았다.
             binding.plusCalcWebview.post {
                 binding.plusCalcWebview.loadUrl("javascript:updateText($result)")
             }
