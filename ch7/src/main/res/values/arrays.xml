@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    다이얼로그 목록 구성 문자열-->
+    <string-array name="list">
+        <item>사과</item>
+        <item>딸기</item>
+        <item>복숭아</item>
+        <item>귤</item>
+    </string-array>
+</resources>
