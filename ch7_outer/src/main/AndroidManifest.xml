@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--    자신을 보호하기 위한 퍼미션 선언한다. 퍼미션 선언한 후에 보호하고자 하는 component에 등록한다.-->
+    <permission
+        android:name="com.example.ch7_outer.ONE_PERMISSION"
+        android:description="@string/one_desc"
+        android:label="One Label"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.ch7_outer.TWO_PERMISSION"
+        android:description="@string/two_desc"
+        android:label="Two Label"
+        android:protectionLevel="dangerous" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +35,8 @@
 
         <activity
             android:name=".TwoActivity"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.ch7_outer.TWO_PERMISSION">
             <intent-filter>
                 <action android:name="CH7_ACTION_TWO" />
 
@@ -32,7 +46,8 @@
 
         <activity
             android:name=".OneActivity"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.ch7_outer.ONE_PERMISSION">
             <intent-filter>
                 <action android:name="CH7_ACTION_ONE" />
 
