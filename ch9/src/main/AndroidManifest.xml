@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidLab2">
+        <activity
+            android:name=".Test2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub4Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_SUB4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sub3Activity"
+            android:exported="true">
+            <intent-filter>
+
+                <!--
+                action, category, data 어느것을 추가할지는 개발자 임의의 선택이다.
+                선언되어 있으면 모두 맞추어야 한다.
+                action이 여러개, category도 여러개, data 여러개를 넣는게 가능하다.
+                그 중에서 하나만 맞으면 된다.
+                -->
+                <action android:name="ACTION_SUB3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- name에 패키지명을 추가하는 것이 권장 사항이다. -->
+                <category android:name="com.example.ch9.CATEGORY_SUB3" />
+            </intent-filter>
+        </activity> <!-- Sub2Activity는 명시적으로도 되지만 암시적 테스트를 위해서 -->
+        <activity
+            android:name=".Sub2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ACTION_SUB2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Sub1Activity는 명시적으로 intent전달 예정 -->
+        <activity
+            android:name=".Sub1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Test1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
