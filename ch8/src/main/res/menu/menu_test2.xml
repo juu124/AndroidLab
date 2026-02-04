@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+xml 의 속성 값을 누군가는 처리해야 줘야한다.
+title의 save값이라는 것을 처리해줘야한다.
+그 api가 plateform api라면 그 속성도 표준 속성이다. http://schemas.android.com/apk/res/android 로 네임스페이스 선언된다.
+android : -> android 표준 api라는 것을 알려주는 네임스페이스
+
+속성을 처리하는 api 가 비표준이라면, 속성도 표준이 아니다.
+http://schemas.android.com/apk/res-auto로 네임스페이스 선언해서 등록해야 한다.
+
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_setting"
+        android:title="setting" />
+
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="save"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+</menu>

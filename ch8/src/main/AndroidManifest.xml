@@ -9,11 +9,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab2">
         <activity
+            android:name=".Test2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Sub2Activity"
             android:exported="false" />
         <activity
             android:name=".Sub1Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Test1Activity" />
         <activity
             android:name=".Test1Activity"
             android:exported="true">
