@@ -21,13 +21,14 @@ class Sub1Activity : AppCompatActivity() {
         // ActionBar를 toolbar로 대체하겠어요~ 따잇!
         setSupportActionBar(binding.toolbar)
 
+        // up 버튼 출력
+        // toolbar로 actionbar를 대체한다.
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
     }
 }

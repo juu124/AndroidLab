@@ -5,7 +5,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ch8.databinding.ActivitySub1Binding
 import com.example.ch8.databinding.ActivitySub2Binding
 
 class Sub2Activity : AppCompatActivity() {
@@ -28,5 +27,15 @@ class Sub2Activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // up button 제공
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    // up button 클릭시 호출됨
+    override fun onSupportNavigateUp(): Boolean {
+        // 자신을 종료시켜서 시스템에 의해 자동으로 이전화면으로 전환되게 처리한다.
+        finish()
+        return true
     }
 }
