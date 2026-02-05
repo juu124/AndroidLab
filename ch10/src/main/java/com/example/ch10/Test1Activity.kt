@@ -27,7 +27,7 @@ class Test1Activity : AppCompatActivity() {
         // 테이블이 있는지 확인하고 들어가야한다.
         // SELECT 획득 칼럼 명 FROM 테이블 명 WHERE 조건
         // SQL 에 ? 는 데이터가 들어갈 자리이다. 이 sql을 실행하려면 ?에 해당되는 데이터를 지정한 후 실행해야 한다.
-        val query = "SELECT name FROM sql_master WHERE type = 'table' AND name = ?"
+        val query = "SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?"
 
         // 위 sql 실행..
         // test_tb 라는 데이터가 ?에 들어가서 실행된다. 결국 test_tb라는 테이블이 이미 만들어 진 것인지 확인한다.
